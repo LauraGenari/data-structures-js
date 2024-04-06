@@ -1,5 +1,7 @@
 const Node = require('./Node');
 
+// efficient for inserting/removing
+// inefficient for listing
 class Stack {
     constructor(){
         this.first = null;
