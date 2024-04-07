@@ -1,6 +1,7 @@
 const Stack = require('./Stack');
 const Queue = require('./Queue');
 const SingleLinkedList = require('./LinkedLists/SingleLinkedList');
+const DoubleLinkedList = require('./LinkedLists/DoubleLinkedList');
 
 // ------- stack -------
 const stack = new Stack();
@@ -40,18 +41,39 @@ singleLinkedList.push(7);
 singleLinkedList.push(8);
 singleLinkedList.push(9);
 
-// singleLinkedList.reverse();
-singleLinkedList.shift();
-singleLinkedList.pop();
+singleLinkedList.reverse();
+// singleLinkedList.shift();
+// singleLinkedList.pop();
 
-singleLinkedList.unshift(10);
+// singleLinkedList.unshift(10);
 // singleLinkedList.set(0, 1)
 
-singleLinkedList.insert(2, 2);
-singleLinkedList.remove(3)
+// singleLinkedList.insert(2, 2);
+// singleLinkedList.remove(3)
 
-singleLinkedList.print();
-// console.log(singleLinkedList);
+// singleLinkedList.print();
 
-// const removedSingleLinkedList = singleLinkedList.pop();
-// console.log(removedSingleLinkedList);
+// -------- double linked list -------
+const doubleLinkedList = new DoubleLinkedList();
+
+doubleLinkedList.push(1);
+doubleLinkedList.push(2);
+doubleLinkedList.push(3);
+doubleLinkedList.push(4);
+doubleLinkedList.push(5);
+doubleLinkedList.push(6);
+doubleLinkedList.push(7);
+doubleLinkedList.push(8);
+doubleLinkedList.push(9);
+
+doubleLinkedList.reverse();
+// doubleLinkedList.shift();
+// doubleLinkedList.pop();
+
+// doubleLinkedList.unshift(10);
+// doubleLinkedList.set(0, 1);
+
+// doubleLinkedList.insert(2, 2);
+// doubleLinkedList.remove(3)
+
+doubleLinkedList.print();
