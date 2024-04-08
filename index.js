@@ -3,6 +3,7 @@ const Queue = require('./LinkedLists/Queue');
 const SingleLinkedList = require('./LinkedLists/SingleLinkedList');
 const DoubleLinkedList = require('./LinkedLists/DoubleLinkedList');
 const BinaryTree = require('./Tree/BinaryTree');
+const MinHeap = require('./Tree/Heap');
 
 // ------- stack -------
 const stack = new Stack();
@@ -79,7 +80,7 @@ doubleLinkedList.reverse();
 
 // doubleLinkedList.print();
 
-// -------- double linked list -------
+// -------- binary tree-------
 const binaryTree = new BinaryTree();
 
 binaryTree.insert(2);
@@ -94,4 +95,14 @@ binaryTree.insert(8);
 
 binaryTree.remove(3)
 
-console.log(JSON.stringify(binaryTree))
+// console.log(JSON.stringify(binaryTree))
+
+// -------- MinHeap -------
+const priorityQueue = new MinHeap();
+priorityQueue.insert(10);
+priorityQueue.insert(5);
+priorityQueue.insert(20);
+priorityQueue.insert(3);
+
+console.log("Removed min value:", priorityQueue.removeMin());
+console.log("Removed min value:", priorityQueue.removeMin());
