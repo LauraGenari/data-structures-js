@@ -1,7 +1,8 @@
-const Stack = require('./Stack');
-const Queue = require('./Queue');
+const Stack = require('./LinkedLists/Stack');
+const Queue = require('./LinkedLists/Queue');
 const SingleLinkedList = require('./LinkedLists/SingleLinkedList');
 const DoubleLinkedList = require('./LinkedLists/DoubleLinkedList');
+const BinaryTree = require('./Tree/BinaryTree');
 
 // ------- stack -------
 const stack = new Stack();
@@ -76,4 +77,21 @@ doubleLinkedList.reverse();
 // doubleLinkedList.insert(2, 2);
 // doubleLinkedList.remove(3)
 
-doubleLinkedList.print();
+// doubleLinkedList.print();
+
+// -------- double linked list -------
+const binaryTree = new BinaryTree();
+
+binaryTree.insert(2);
+binaryTree.insert(9);
+binaryTree.insert(7);
+binaryTree.insert(4);
+binaryTree.insert(1);
+binaryTree.insert(6);
+binaryTree.insert(3);
+binaryTree.insert(5);
+binaryTree.insert(8);
+
+binaryTree.remove(3)
+
+console.log(JSON.stringify(binaryTree))
