@@ -106,3 +106,16 @@ priorityQueue.insert(3);
 
 console.log("Removed min value:", priorityQueue.removeMin());
 console.log("Removed min value:", priorityQueue.removeMin());
+
+// -------- Graph -------
+const Argentina = new Graph();
+Argentina.addNode("Buenos Aires");
+Argentina.addNode("Santa fe");
+Argentina.addNode("Córdoba");
+Argentina.addNode("Mendoza");
+Argentina.addConnection("Buenos Aires", "Córdoba");
+Argentina.addConnection("Buenos Aires", "Mendoza");
+Argentina.addConnection("Santa fe", "Córdoba");
+
+Argentina.removeNode("Buenos Aires");
+console.log(Argentina);
