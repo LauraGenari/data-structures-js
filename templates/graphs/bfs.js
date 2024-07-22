@@ -9,7 +9,7 @@ const graph = {
     F: ['E'],
   };
 */
-function bfs(graph, start) {
+export function bfs(graph, start) {
     const queue = [start]
     const visited = new Set()
     const result = []

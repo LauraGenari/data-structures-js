@@ -1,4 +1,4 @@
-// dfs in adjacency make_list
+// dfs in adjacency list
 /*
 const graph = {
     A: ['B', 'D'],
@@ -9,7 +9,7 @@ const graph = {
     F: ['E'],
   };
 */
-function dfs(graph, start) {
+export function dfs(graph, start) {
     const stack = [start]
     const visited = new Set()
     const result = []
